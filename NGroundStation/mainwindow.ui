@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>401</width>
+    <height>579</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <kerning>true</kerning>
+   </font>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget
+{ 
+	background-color: rgb(233,235,254); 
+	border-radius: 20px; 
+	color: rgb(0, 0, 0); 
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="bt_serialsetup">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton 
+{ 
+	background-color: rgb(233,235,254); 
+	border-radius: 20px; 
+	color: rgb(0, 0, 0); 
+} 
+QPushButton:hover 
+{ 
+	background-color: rgb(200,235,254); 
+}
+
+QPushButton:disabled
+{
+	background-color: rgb(167, 164, 170);
+}</string>
+        </property>
+        <property name="text">
+         <string>配置串口</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Resources.qrc">
+          <normaloff>:/image/usb.png</normaloff>:/image/usb.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bt_switch">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton 
+{ 
+	background-color: rgb(233,235,254); 
+	border-radius: 20px; 
+	color: rgb(0, 0, 0); 
+} 
+QPushButton:hover 
+{ 
+	background-color: rgb(200,235,254); 
+}</string>
+        </property>
+        <property name="text">
+         <string>打开串口</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Resources.qrc">
+          <normaloff>:/image/closecom.png</normaloff>
+          <normalon>:/image/opencom.png</normalon>:/image/closecom.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bt_flightstate">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton 
+{ 
+	background-color: rgb(233,235,254); 
+	border-radius: 20px; 
+	color: rgb(0, 0, 0); 
+} 
+QPushButton:hover 
+{ 
+	background-color: rgb(200,235,254); 
+}</string>
+        </property>
+        <property name="text">
+         <string>飞控状态</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Resources.qrc">
+          <normaloff>:/image/Logo.png</normaloff>:/image/Logo.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bt_datawave">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton 
+{ 
+	background-color: rgb(233,235,254); 
+	border-radius: 20px; 
+	color: rgb(0, 0, 0); 
+} 
+QPushButton:hover 
+{ 
+	background-color: rgb(200,235,254); 
+}</string>
+        </property>
+        <property name="text">
+         <string>数据波形</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Resources.qrc">
+          <normaloff>:/image/wave.png</normaloff>:/image/wave.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bt_parameter">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton 
+{ 
+	background-color: rgb(233,235,254); 
+	border-radius: 20px; 
+	color: rgb(0, 0, 0); 
+} 
+QPushButton:hover 
+{ 
+	background-color: rgb(200,235,254); 
+}</string>
+        </property>
+        <property name="text">
+         <string>参数调试</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Resources.qrc">
+          <normaloff>:/image/debug.png</normaloff>:/image/debug.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bt_remote">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton 
+{ 
+	background-color: rgb(233,235,254); 
+	border-radius: 20px; 
+	color: rgb(0, 0, 0); 
+} 
+QPushButton:hover 
+{ 
+	background-color: rgb(200,235,254); 
+}</string>
+        </property>
+        <property name="text">
+         <string>虚拟遥控</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Resources.qrc">
+          <normaloff>:/image/remote.png</normaloff>:/image/remote.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bt_calibration">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton 
+{ 
+	background-color: rgb(233,235,254); 
+	border-radius: 20px; 
+	color: rgb(0, 0, 0); 
+} 
+QPushButton:hover 
+{ 
+	background-color: rgb(200,235,254); 
+}</string>
+        </property>
+        <property name="text">
+         <string>飞控校准</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Resources.qrc">
+          <normaloff>:/image/calibration.png</normaloff>:/image/calibration.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="bt_sendandreceive">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton 
+{ 
+	background-color: rgb(233,235,254); 
+	border-radius: 20px; 
+	color: rgb(0, 0, 0); 
+} 
+QPushButton:hover 
+{ 
+	background-color: rgb(200,235,254); 
+}</string>
+        </property>
+        <property name="text">
+         <string>基本收发</string>
+        </property>
+        <property name="icon">
+         <iconset resource="Resources.qrc">
+          <normaloff>:/image/senddata.png</normaloff>:/image/senddata.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>401</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="help">
+    <property name="title">
+     <string>使用帮助</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="Frame"/>
+    <addaction name="update"/>
+   </widget>
+   <widget class="QMenu" name="about">
+    <property name="title">
+     <string>关于我们</string>
+    </property>
+    <addaction name="web"/>
+    <addaction name="blog"/>
+    <addaction name="store"/>
+    <addaction name="TEL"/>
+    <addaction name="contact"/>
+   </widget>
+   <addaction name="about"/>
+   <addaction name="help"/>
+  </widget>
+  <action name="Frame">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/image/book.png</normaloff>:/image/book.png</iconset>
+   </property>
+   <property name="text">
+    <string>通讯协议V1.0.1</string>
+   </property>
+  </action>
+  <action name="web">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/image/web.png</normaloff>:/image/web.png</iconset>
+   </property>
+   <property name="text">
+    <string>官网官网（链接）</string>
+   </property>
+  </action>
+  <action name="blog">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/image/blog.png</normaloff>:/image/blog.png</iconset>
+   </property>
+   <property name="text">
+    <string>技术社区（链接）</string>
+   </property>
+  </action>
+  <action name="store">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/image/taobao.png</normaloff>:/image/taobao.png</iconset>
+   </property>
+   <property name="text">
+    <string>淘宝店铺（链接）</string>
+   </property>
+   <property name="toolTip">
+    <string>技术交流QQ群：465082224</string>
+   </property>
+  </action>
+  <action name="TEL">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/image/tech.png</normaloff>:/image/tech.png</iconset>
+   </property>
+   <property name="text">
+    <string>技术客服（微信）：15871778515</string>
+   </property>
+  </action>
+  <action name="contact">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/image/QQ.png</normaloff>:/image/QQ.png</iconset>
+   </property>
+   <property name="text">
+    <string>技术交流QQ群：465082224</string>
+   </property>
+  </action>
+  <action name="update">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/image/update.png</normaloff>:/image/update.png</iconset>
+   </property>
+   <property name="text">
+    <string>软件升级（当前版本V1.0.1）</string>
+   </property>
+   <property name="toolTip">
+    <string>软件升级</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
