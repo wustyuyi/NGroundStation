@@ -119,3 +119,15 @@
 #### 为广大开发者提供地面站二次开发交流平台，微信扫描加入知识星球：
 
 ![learn](images/learn-1586145845974.png)
+
+
+
+## 3.4 二次开发者TIP搜集:
+
+1、在QT开发环境，安装以上两个支持包后，编译地面站源码时会出现以下提示
+
+![pressed](images/pressed.png)
+
+​          原因是地面站虚拟遥控器界面代码调用了customrocker.h类的私有成员变量，解决办法：把customrocker.h里面bool pressed变量从private改到public下就行。
+
+![public](images/public.png)

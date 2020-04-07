@@ -130,7 +130,7 @@ waveshow::waveshow(QWidget *parent) :
     ui->qwtPlot->setAxisScale(QwtPlot::xBottom,0.0,MAX_DATA_SIZE);
     ui->qwtPlot->setTitle("数据波形");
     //ui->qwtPlot->setAxisTitle(QwtPlot::yLeft,"Degree");
-    ui->qwtPlot->setAxisTitle(QwtPlot::xBottom,"Sampling Ponits");
+    ui->qwtPlot->setAxisTitle(QwtPlot::xBottom,"Sampling Points");
 
     QwtLegend *legendwave = new QwtLegend;//实例化图例
     legendwave->setDefaultItemMode( QwtLegendData::Checkable );//图例可以选择,Checkable

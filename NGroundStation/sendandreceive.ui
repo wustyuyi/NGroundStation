@@ -856,16 +856,32 @@ QPushButton:hover
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QLineEdit" name="lineEdit2"/>
+        <widget class="QLineEdit" name="lineEdit2">
+         <property name="text">
+          <string>AT+NAME=nc</string>
+         </property>
+        </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QLineEdit" name="lineEdit3"/>
+        <widget class="QLineEdit" name="lineEdit3">
+         <property name="text">
+          <string>AT+ROLE=M</string>
+         </property>
+        </widget>
        </item>
        <item row="4" column="1">
-        <widget class="QLineEdit" name="lineEdit5"/>
+        <widget class="QLineEdit" name="lineEdit5">
+         <property name="text">
+          <string>AT+RX</string>
+         </property>
+        </widget>
        </item>
        <item row="3" column="1">
-        <widget class="QLineEdit" name="lineEdit4"/>
+        <widget class="QLineEdit" name="lineEdit4">
+         <property name="text">
+          <string>AT+BAUD=115200,N</string>
+         </property>
+        </widget>
        </item>
        <item row="1" column="2">
         <widget class="QPushButton" name="bt_send2">
@@ -897,6 +913,9 @@ QPushButton:hover
            <width>0</width>
            <height>0</height>
           </size>
+         </property>
+         <property name="text">
+          <string>AT+DEFAULT</string>
          </property>
         </widget>
        </item>

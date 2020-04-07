@@ -43,7 +43,7 @@ flightstate::flightstate(QWidget *parent) :
     ui->qwtPlot->setAxisScale(QwtPlot::xBottom,0,flightstate_wave_num_max);
     ui->qwtPlot->setTitle("姿态角曲线");
     ui->qwtPlot->setAxisTitle(QwtPlot::yLeft,"Degree");
-    ui->qwtPlot->setAxisTitle(QwtPlot::xBottom,"Sampling Ponits");
+    ui->qwtPlot->setAxisTitle(QwtPlot::xBottom,"Sampling Points");
 
     //ui->qwtPlot->insertLegend(new QwtLegend(), QwtPlot::RightLegend);//设置右边标注
     QwtLegend *legend = new QwtLegend;//实例化图例
